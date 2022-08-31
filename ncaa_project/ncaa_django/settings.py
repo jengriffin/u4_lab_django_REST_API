@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ncaa'
+    'ncaa',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -82,6 +83,11 @@ DATABASES = {
         'PASSWORD': 'ncaa',
         'HOST': 'localhost'
     }
+}
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
 }
 
 
