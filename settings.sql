@@ -1,0 +1,4 @@
+-- settings.sql
+CREATE DATABASE ncaa;
+CREATE USER ncaauser WITH PASSWORD 'ncaa';
+GRANT ALL PRIVILEGES ON DATABASE ncaa TO ncaauser;
